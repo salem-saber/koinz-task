@@ -43,6 +43,21 @@ This project is a books recommender system based on users reading intervals.
 
 6. The API should now be accessible at `http://localhost:8000/api`.
 
+## Database
+
+Before running the application you need to create the database and run the migrations and seeders by running the
+following commands:
+
+- Migrations
+```bash
+  php artisan migrate:fresh
+```
+
+- Seeders
+```bash
+  php artisan db:seed
+```
+
 ## Usage
 
 ### Endpoints
@@ -84,6 +99,6 @@ This project is a books recommender system based on users reading intervals.
   ]
   ```
 
-
 ## API Documentation
+
 The API documentation is available at https://documenter.getpostman.com/view/4199586/2sA3JNbLUh.
