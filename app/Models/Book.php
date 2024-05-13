@@ -2,27 +2,26 @@
 
 namespace App\Models;
 
-
-use Database\Factories\UserFactory;
+use Database\Factories\BookFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class User extends Model
+class Book extends Model
 {
-
     use HasFactory;
 
-    protected $fillable = ['name' , 'phone'];
+    protected $fillable = ['title'];
 
     public function readingIntervals()
     {
         return $this->hasMany(ReadingInterval::class);
     }
 
+
     public static function newFactory()
     {
-        return new UserFactory();
+        return new BookFactory();
     }
+
 
 }

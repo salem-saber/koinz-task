@@ -5,16 +5,13 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 
-class UserFactory extends Factory
+class BookFactory extends Factory
 {
-
 
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'phone' => fake()->phoneNumber(),
-
+            'title' => fake()->sentence(),
         ];
     }
 }
